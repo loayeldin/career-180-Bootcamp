@@ -1,0 +1,21 @@
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh ;
+
+}
+nav{
+    height: 100px;
+    background-color: aqua;
+}
+
+.body{
+    background-color: rgb(201, 199, 199);
+    flex-grow: 1;
+}
+
+footer{
+    background-color: palevioletred;
+    height: 100px;
+}

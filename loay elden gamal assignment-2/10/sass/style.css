@@ -1,0 +1,149 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f4f6f9;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+}
+.login-container .login-card {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.login-container .login-card h2 {
+  color: #4f4f8e;
+  margin-bottom: 5px;
+}
+.login-container .login-card .subtitle {
+  color: #888;
+  font-size: 0.9em;
+  margin-bottom: 20px;
+}
+.login-container .login-card form label {
+  display: block;
+  text-align: left;
+  margin: 10px 0 5px;
+  font-weight: bold;
+  color: #333;
+}
+.login-container .login-card form input[type=text],
+.login-container .login-card form input[type=password] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+.login-container .login-card .forgot-password {
+  float: right;
+  font-size: 0.9em;
+  color: #888;
+  text-decoration: none;
+}
+.login-container .login-card .forgot-password:hover {
+  color: #333;
+}
+.login-container .login-card .remember-me {
+  display: flex;
+  align-items: center;
+  text-align: left;
+  margin-bottom: 20px;
+  color: #555;
+}
+.login-container .login-card .remember-me input {
+  margin-right: 10px;
+}
+.login-container .login-card .sign-in-btn {
+  width: 100%;
+  padding: 10px;
+  background-color: #20c997;
+  border: none;
+  color: #fff;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.login-container .login-card .sign-in-btn:hover {
+  background-color: #17a2b8;
+}
+.login-container .login-card .sign-in-with-text {
+  margin: 20px 0 10px;
+  color: #888;
+  font-size: 0.9em;
+  position: relative;
+}
+.login-container .login-card .sign-in-with-text::before, .login-container .login-card .sign-in-with-text::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 30%;
+  height: 1px;
+  background-color: #ddd;
+}
+.login-container .login-card .sign-in-with-text::before {
+  left: 0;
+}
+.login-container .login-card .sign-in-with-text::after {
+  right: 0;
+}
+.login-container .login-card .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin: 15px 0;
+}
+.login-container .login-card .social-icons .social-icon {
+  color: #fff;
+  font-size: 1.2em;
+  padding: 10px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.login-container .login-card .social-icons .social-icon.facebook {
+  background-color: #3b5998;
+}
+.login-container .login-card .social-icons .social-icon.google {
+  background-color: #db4437;
+}
+.login-container .login-card .social-icons .social-icon.github {
+  background-color: #333;
+}
+.login-container .login-card .social-icons .social-icon.twitter {
+  background-color: #1da1f2;
+}
+.login-container .login-card .social-icons .social-icon:hover {
+  opacity: 0.8;
+}
+.login-container .login-card .signup-text {
+  margin-top: 20px;
+  color: #888;
+  font-size: 0.9em;
+}
+.login-container .login-card .signup-text a {
+  color: #4f4f8e;
+  text-decoration: none;
+  font-weight: bold;
+}
+.login-container .login-card .signup-text a:hover {
+  text-decoration: underline;
+}/*# sourceMappingURL=style.css.map */

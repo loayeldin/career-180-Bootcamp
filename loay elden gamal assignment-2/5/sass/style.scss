@@ -1,0 +1,105 @@
+.justify-self-center {
+    justify-self: center;
+}
+
+.justify-self-end {
+    justify-self: end;
+}
+
+.card-section {
+    background-color: #eee;
+    font-family: "Rubik", serif;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 20px;
+}
+
+.card {
+    grid-column: span 4;
+    min-height: 200px;
+    background-color: white;
+    border-radius: 10px;
+
+    .card-head {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #555;
+        border-bottom: 1px solid #ddd;
+        padding: 10px;
+        text-transform: capitalize;
+
+        .close-btn {
+            background: none;
+            border: none;
+            font-size: 1.2em;
+            cursor: pointer;
+            color: #aaa;
+        }
+    }
+
+    .card-content {
+        text-align: center;
+        padding: 20px;
+
+        .profile-pic {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            object-fit: cover;
+        }
+
+        h3 {
+            font-size: 1.1em;
+            color: #333;
+            margin: 10px 0 5px;
+            text-transform: capitalize;
+        }
+
+        p {
+            font-size: 0.9em;
+            color: #777;
+        }
+    }
+
+    .card-footer {
+        padding: 10px 0;
+        display: flex;
+        justify-content: center;
+        gap: 10px;
+        border-top: 1px solid #ddd;
+
+        .social-icon {
+            color: #555;
+            font-size: 1.2em;
+            text-decoration: none;
+            padding: 5px;
+            border-radius: 50%;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+
+            &.fa-facebook {
+                color: #3b5998 !important;
+            }
+
+            &.fa-whatsapp {
+                color: #25d366;
+            }
+
+            &.fa-linkedin {
+                color: #0077b5;
+            }
+
+            &.fa-slack {
+                color: #c3002f;
+            }
+        }
+    }
+}

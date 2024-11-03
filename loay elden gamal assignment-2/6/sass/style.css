@@ -1,0 +1,66 @@
+.justify-self-center {
+  justify-self: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.card-section {
+  background-color: #eee;
+  font-family: "Rubik", serif;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.card-section .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.card-section .grid-wrapper .card {
+  grid-column: span 4;
+  min-height: 280px;
+  background-color: white;
+  border-radius: 10px;
+  background-image: url("../cover.jpg");
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+.card-section .grid-wrapper .card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background-color: rgba(128, 128, 128, 0.3);
+}
+.card-section .grid-wrapper .card .card-head {
+  color: white;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  text-transform: capitalize;
+}
+.card-section .grid-wrapper .card .card-content {
+  padding: 20px;
+}
+.card-section .grid-wrapper .card .card-content p {
+  font-size: 0.9em;
+  color: white;
+  text-transform: capitalize;
+  margin: 10px 0 5px;
+}
+.card-section .grid-wrapper .card .card-footer {
+  padding: 10px 0;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  border-top: 1px solid #ddd;
+}
+.card-section .grid-wrapper .card .card-footer .btn {
+  background-color: transparent;
+  border: none;
+  text-transform: capitalize;
+  font-size: 18px;
+  color: white;
+}/*# sourceMappingURL=style.css.map */

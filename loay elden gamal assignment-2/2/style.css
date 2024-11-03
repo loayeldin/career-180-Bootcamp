@@ -1,0 +1,47 @@
+
+.flex-wrapper{
+    display: flex;
+    flex-direction: column;
+    min-height:100vh ;
+
+}
+nav{
+    height: 100px;
+    background-color: aqua;
+}
+
+.main{
+    background-color: #eee;
+    flex-grow: 1;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    column-gap: 20px;
+    padding: 10px;
+}
+
+
+.blogs{
+    grid-column: span 9;
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    gap: 20px;
+}
+.aside-menu{
+    background-color: yellow;
+    width: 100%;
+    grid-column: span 3;
+  
+}
+.blog-card{
+  grid-column: span 6;
+  background-color: rgb(160, 70, 70);
+}
+.blog-summary{
+    grid-column: span 12;
+    background-color: gray;
+}
+
+footer{
+    background-color: palevioletred;
+    height: 100px;
+}

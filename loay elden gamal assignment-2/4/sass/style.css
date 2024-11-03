@@ -1,0 +1,47 @@
+.justify-self-center {
+  justify-self: center;
+}
+
+.justify-self-end {
+  justify-self: end;
+}
+
+.card-section {
+  background-color: #eee;
+  font-family: "Rubik", serif;
+  padding: 40px 10px;
+  padding-bottom: 40px;
+}
+.card-section .grid-wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 20px;
+}
+.card-section .grid-wrapper .card {
+  grid-column: span 4;
+  min-height: 200px;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px;
+}
+.card-section .grid-wrapper .card .icon-box i {
+  font-size: 20px;
+  background-color: greenyellow;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
+.card-section .grid-wrapper .card h3 {
+  text-transform: capitalize;
+}
+.card-section .grid-wrapper .card .btn {
+  width: 100%;
+  padding: 10px;
+  text-transform: capitalize;
+  background-color: greenyellow;
+  color: white;
+  border: none;
+}/*# sourceMappingURL=style.css.map */
