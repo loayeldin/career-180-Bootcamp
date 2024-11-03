@@ -1,0 +1,162 @@
+body{
+    background-color: aliceblue;
+}
+/* start blogs styles*/
+.blog-section{
+    background-color: brown;
+    padding: 10px;
+}
+.blog-section .blog{
+    width: 30%;
+    margin: 0px 15px 0px 15px;
+    display: inline-block;
+    min-height: 300px;
+    background-color: aqua;
+  
+} 
+/*end blogs styles*/
+
+/* start buttons styles*/
+.btn{
+  
+    color: white;
+    padding: 8px 12px;
+    text-transform: capitalize;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 8px;
+   
+}
+.primary-btn{
+    background-color: rgb(48, 48, 109);
+
+}
+.secondary-btn{
+    background-color:rgb(42, 125, 153) ;
+}
+.success-btn{
+    background-color:rgb(24, 173, 161) ;
+}
+
+.info-btn{
+    background-color:rgb(9, 153, 201) ;
+}
+.warning-btn{
+    background-color:rgb(233, 144, 10) ;
+}
+
+.danger-btn{
+    background-color:rgb(236, 97, 4);
+}
+.dark-btn{
+    background-color:black ;
+}
+
+
+/* end buttons styles*/
+
+
+
+/* start form styles*/
+
+
+form{
+    width: 40%;
+    background-color: white;
+    margin: 30px auto;
+    padding: 10px 15px;
+    font-family: "Roboto Condensed", serif;
+}
+label{
+    text-transform: capitalize;
+    font-weight: 500;
+}
+input{
+    display: block;
+    width: 100%;
+    border: 1px solid #d8d5d5;
+    height: 35px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+input:focus{
+
+    outline: #d8d5d5;
+}
+textarea {
+    width: 100%;           
+    max-width: 800px;      
+    height: 100px;         
+    padding: 10px;          
+    font-size: 16px;      
+    line-height: 1.5;       
+    border: 1px solid #ccc; 
+    border-radius: 5px;     
+    resize: vertical;      
+    box-sizing: border-box; 
+    outline: none;      
+  }
+
+.form-btn{
+    margin-top: 10px;
+   background-color: rgb(43, 46, 80);
+   color: white;
+   padding: 5px 10px;
+   cursor: pointer;
+    border-radius: 4px;
+   border: 1px solid transparent;
+}
+
+/* end form styles*/
+
+
+/* start tables styles*/
+
+
+.table-section{
+    width: 45%;
+    float: left;
+    font-family: "Roboto Condensed", serif;
+    background-color: white;
+    margin:10px 20px;
+    padding: 10px;
+  
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+
+}
+
+th, td {
+    border-bottom: 1px solid #eee;
+    padding: 10px 5px;
+  }
+.striped-table tr:nth-child(even) {
+    background-color: #f2f2f2;   
+  }
+  .striped-table .btn{
+    font-size: 14px;
+    color: white;
+    padding: 5px 7px;
+    text-transform: capitalize;
+    border: 1px solid white;
+    cursor: pointer;
+    border-radius: 8px;
+   
+  }
+  .striped-table .confirmed-btn{
+    background-color: rgb(10, 201, 10);
+  }
+
+  .striped-table .waiting-btn{
+    background-color: rgb(199, 173, 24);
+  }
+
+  .striped-table .cancelled-btn{
+    background-color: red;
+  }
+/* end tables styles*/
