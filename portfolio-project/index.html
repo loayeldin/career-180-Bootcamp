@@ -12,6 +12,9 @@
 <body>
     <div>
         <aside class="aside-menu">
+            <span class="arrow-box">
+                <i id="toggleBtn" class="fa-solid fa-arrow-left"></i>
+            </span>
           <div class="aside-header">
             <img src="assets/images/profile.png" alt="personal-img" class="person-img">
             <h2>loay elden gamal</h2>
@@ -24,32 +27,32 @@
             </div>
           </div>
           <div class="aside-cat">
-            <a class="cat-content active" href="#intro">
+            <a class="cat-content active" href="#intro"  data-name="About me">
                 <i class="fa-regular fa-user fa-md"></i>
                 <span class="cat-content-text">About me</span>
             </a>
-            <a class="cat-content"  href="#features-section" >
-                <i class="fa-solid fa-code fa-md"></i>
+            <a class="cat-content"  href="#features-section"  data-name="portfolio">
+                <i class="fa-brands fa-codepen fa-sm"></i>
                 <span  class="cat-content-text">portfolio</span>
             </a>
-            <a  class="cat-content"  href="#Get-touch">
+            <a  class="cat-content"  href="#Get-touch"  data-name="service">
                 <i class="fa-solid fa-briefcase fa-md"></i>
                 <span class="cat-content-text">service & pricing</span>
                 <span class="projects-num">16</span>
             </a>
-            <a  class="cat-content" href="#about-me">
+            <a  class="cat-content" href="#about-me"  data-name="resume">
                 <i class="fa-solid fa-file fa-md"></i>
                 <span class="cat-content-text">resume</span>
             </a>
-            <a  class="cat-content" href="#features-section">
+            <a  class="cat-content" href="#features-section"  data-name="products">
                 <i class="fa-solid fa-store fa-md"></i>
                 <span class="cat-content-text">products</span>
             </a>
-            <a  class="cat-content" href="#blog-sec">
+            <a  class="cat-content" href="#blog-sec" data-name="blog">
                 <i class="fa-regular fa-newspaper fa-md"></i>
                 <span class="cat-content-text">blog</span>
             </a>
-            <a  class="cat-content" href="#form-sec">
+            <a  class="cat-content" href="#form-sec" data-name="contact">
                 <i class="fa-regular fa-address-book fa-md"></i>
                 <span class="cat-content-text">contact</span>
             </a>
@@ -61,28 +64,28 @@
         <section class="main">
             <section id="intro" class="intro-sec row ">
                <div class="intro-content  col-xxl-5 col-lg-7 col-md-8 ">
-                <h2>Hi, iam a freelancer</h2>
-                <h1>Developer</h1>
-                <p>I have more than <span class="focused-text">1 year of experience</span> developing systems, I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class="focused-text">Angular, 
-                    javascript ,typescript </span> applying good practices and development standards.
-                </p>
-                <div>
-                    <button class="btn btn-primary px-4 py-3 text-capitalize rounded-pill">
-                        <i class="fa-solid fa-arrow-right mx-1 fa-xs " style="color: #ffffff;"></i>
-                        view portfolio
-                    </button>
-    
-                    <button class="btn bg-dark text-white px-4 py-3 mx-xl-4 text-capitalize rounded-pill ">
-                        <i class="fa-regular fa-user fa-xs mx-1" style="color: #fafafa;"></i>
-                        view resume
-                    </button>
-                </div>
+                    <h2>Hi, iam a freelancer</h2>
+                    <h1 class="animation-test">Developer</h1>
+                    <p>I have more than <span class="focused-text">1 year of experience</span> developing systems, I am dedicated to writing and refactoring clean, reusable, and scalable code in <span class="focused-text">Angular, 
+                        javascript ,typescript </span> applying good practices and development standards.
+                    </p>
+                    <div>
+                        <button class="btn btn-primary px-4 py-3 text-capitalize rounded-pill">
+                            <i class="fa-solid fa-arrow-right mx-1 fa-xs " style="color: #ffffff;"></i>
+                            view portfolio
+                        </button>
+        
+                        <button class="btn bg-dark text-white px-4 py-3 mx-xl-4 text-capitalize rounded-pill ">
+                            <i class="fa-regular fa-user fa-xs mx-1" style="color: #fafafa;"></i>
+                            view resume
+                        </button>
+                    </div>
                </div>
 
                <div class="img-sec col-xxl-4 col-lg-4 col-md-4 offset-lg-1 offset-xxl-3 gx-0" >
-                <div class="img-overlay"></div>
-                <img src="assets/images/user.jpg" alt="person-img" class="person-img w-100 h-100">
-            </div>
+                    <div class="img-overlay"></div>
+                    <img src="assets/images/user.jpg" alt="person-img" class="person-img w-100 h-100">
+                </div>
             </section>
 
             <section id="statistics" class="statistics d-flex">
@@ -470,7 +473,7 @@
 
                </div>
                <div class="form-content">
-                    <div class="row px-5 py-5 gy-4">
+                    <div class="row px-sm-5 py-5 gy-4">
                         <div class="col-md-6">
                             <div class="input-shape d-flex align-items-center">
                                <span class="icon">
@@ -508,7 +511,7 @@
                             <textarea name="message" id="message" placeholder="your message:" class="form-control" rows="10"></textarea>
                         </div>
                         <div class="col-12">
-                            <button class="btn btn-primary px-4 py-3 text-capitalize rounded-pill">
+                            <button class="btn btn-primary px-sm-4 py-sm-3 text-capitalize rounded-pill">
                                
                                 send message
                             </button>
@@ -530,5 +533,8 @@
     </div>
    
     <script src="bootstrap-5.0.2-dist/js/bootstrap.bundle.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="style.js"></script>
 </body>
 </html>

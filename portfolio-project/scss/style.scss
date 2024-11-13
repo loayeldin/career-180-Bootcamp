@@ -37,12 +37,101 @@ body {
     width: $aside-width;
     min-height: 100vh;
 
-    transition: transform 0.5s ease; 
+    transition: all  0.7s ease; 
     position: fixed;
     left: 0;
     top: 0;
     color: $back-color;
     padding: 0px 10px;
+
+    &.aside-collapsed { 
+        $aside-width:50px;
+       width: $aside-width;
+       background-color: #f7f7f7;
+       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1), 
+       0px 2px 4px rgba(0, 0, 0, 0.06);
+        .aside-header{
+            display: none;
+        }
+        .aside-cat{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .cat-content{
+             
+                position: relative;
+                margin-bottom: 40px;
+                border-radius: 10px;
+        
+                .cat-content-text{
+                  
+                    display: none;
+                }
+                .projects-num{
+                    display: none;
+                }
+                i{
+                    font-size: 20px;
+                   
+                   
+                }
+                &::after {
+                    content: attr(data-name); 
+                    position: absolute;
+                    top: 50%;
+                    left: 135%;
+                    transform: translateY(-50%);
+                    visibility: hidden; 
+                    background-color:$main-color;
+                   
+                    color: white;
+                    z-index: 12;
+                    padding: 8px;
+                    border-radius: 7px;
+            
+                    text-transform: capitalize;
+                    font-size: 13px;
+                    opacity: 0;
+                    transition: opacity 0.2s ease-in-out;
+                    white-space: nowrap;
+                    
+                }
+                &:hover::after {
+                    visibility: visible;
+                    opacity: 1;
+                }
+                
+               
+            }
+            .active{
+                
+             color: $main-color;
+             background-color: transparent ;
+            }
+        }
+ 
+    }
+    .arrow-box{
+        margin-top: 15px;
+        justify-self: flex-end;
+        display: flex;
+        border: 1px solid #dfdfdf;
+        cursor: pointer;
+        transition: .5s all;
+        padding: 5px 8px;
+        i{
+            color: $main-color;
+            transition: .5s all;
+        }
+        &:hover{
+            background-color: $main-color;
+            i{
+                color: white !important;
+            }
+        }
+
+    }
     .aside-header{
         text-align: center;
         padding: 25px 0px;
@@ -113,18 +202,24 @@ body {
     }
 }
 .main{
-    width: calc(100% -  $aside-width);
+    width: calc(100% -  #{$aside-width});
  
     margin-left: $aside-width;
-    transition: transform 0.5s ease; 
+    transition: all 0.7s ease; 
     padding:0px 15px;
-  
+    &.main-collapsed{
+        $aside-width:50px;
+        width: calc(100% -  #{$aside-width +20px} );
+ 
+        margin-left: $aside-width+20px;
+    }
     /* start intro section and statistics*/
     .intro-sec{
         display: flex;
         align-items: center;
-     
+   
         min-height: 700px;
+        overflow: hidden;
         .intro-content{
             display: flex;
             flex-direction: column;
@@ -144,7 +239,11 @@ body {
       
         }
         .img-sec{
+     
+            height: 600px;
+            
             position: relative;
+            
             @keyframes myoverlay {
                 0%{ transform: rotate(20deg);}
                 25%{ transform: rotate(-20deg);}
@@ -162,6 +261,10 @@ body {
                 animation: myoverlay 10s infinite;
                 animation-fill-mode: both;
             }
+        
+          
+           
+
         }
     
        
@@ -474,9 +577,44 @@ body {
 
 
     }
+    .main{
+       
+        /* start intro section and statistics*/
+        .intro-sec{
+           
+
+            .img-sec{
+         
+                height: 400px;
+                
+                position: relative;
+                
+            
+              
+               
+    
+            }
+        }
+    }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
     .main{
+         /* start intro section and statistics*/
+         .intro-sec{
+           
+
+            .img-sec{
+         
+                height: 400px;
+                
+                position: relative;
+                
+            
+              
+               
+    
+            }
+        }
         .statistics{
          
             .project-statistics{
@@ -586,11 +724,6 @@ body {
         
     }
 }
-
-
-
-
-
 @media (max-width: 991px) {
     $aside-width:200px;
     .aside-menu{
@@ -712,11 +845,39 @@ body {
 @media (max-width: 767px){
     .main{
         .intro-sec{
-            min-height: 700px ;
+            min-height: 600px ;
+         
+            .intro-content{
+
+                .img-sec{
+
+                    padding: 10px 30px;
+                    position: relative;
+                    
+                    .img-overlay{
+                   
+                       
+                        display: none;
+                      
+                  
+                    }
+            }
            
-        }
-        .about-me{
+              
+               
     
+            }
+        }
+        
+        .about-me{
+            .about-header{
+             
+                h2{
+             
+                    font-size: 28px;
+             
+                }
+            }
             .about-cards{
              
                 grid-template-columns: repeat(1,1fr) !important;
@@ -726,6 +887,109 @@ body {
     
     
         }
+        .features-section{
+            .features-header{
+        
+                h2{
+             
+                    font-size: 28px;
+         
+                }
+            }
+    
+            .features-wrapper{
+                margin-top: 40px;
+    
+                .features-card{
+                                
+               
+                    h4{
+                 
+                        font-size: 20px;
+                    }
+                  
+                    .card-content{
+                        .buttons-group{
+                            .skills-btn{
+                           
+                                font-size: 15px;
+                         
+                            }
+                        }
+                    }
+             
+                }
+            }
+    
+        }
+        
+        .blog-sec{
+            .blog-header{
+                h2{
+                    font-size: 28px;
+                }
+            }
+            .blog-content{
+                margin-top: 20px;
+             
+                .blog-content-text{
+                    padding: 15px 20px;
+                    h3{
+                        text-transform: capitalize;
+                        font-size: 20px;
+                    }
+                    p{
+                        color:#9b9999 ;
+                    }
+                }
+            }
+          
+        }
+        .contact-sec{
+            .contact-header{
+        
+                h2{
+             
+                    font-size: 28px;
+          
+                }
+            }
+            .contact-content{
+                .contact-box{
+                    min-height: 100px;
+                    border-left:  2px solid $main-color;
+                    padding-left: 20px;
+                }
+            
+               
+                h6{
+                    text-transform: capitalize;
+                    font-size: 20px;
+                }
+                span{
+                    color: #9b9999;
+                    font-size: 14px;
+                }
+            }
+        }
+        .form-sec{
+            .form-header{
+      
+                h2{
+              
+                    font-size: 28px;
+         
+                }
+            }
+            .form-content{
+             
+                padding-left: 10px !important;
+                padding-right: 10px !important;
+              
+            
+            }
+        }
+    
     }
    
 }
